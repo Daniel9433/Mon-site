@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',Verdana, Geneva, Tahoma, sans-serif;
+}
+body
+{
+    background: rgb(217,217,217);
+    background: linear-gradient(90deg, rgba(217,217,217,1) 7%, rgba(106,105,105,1) 100%);
+}
+div.conteneur
+{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+header.header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+    padding-top: 20px;
+    align-items: center;
+}
+.header img
+{
+    width: 200px;
+    margin-left: 10%;
+    cursor: pointer;
+}
+.header h1
+{
+    font-size: 2em;
+    color: black;
+    margin-left: 20%;
+    cursor: pointer;
+    width: 200px;
+}
+nav.menu ul
+{
+    display: flex;
+    color: white;
+}
+nav.menu li
+{
+    list-style: none;
+    margin: 0px 10px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    color: white;
+}
+li:hover
+{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+    color: blue;
+}
+div.conteneur_
+{
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+section.texte
+{
+    width: 600px;
+    margin-left: 20%;
+}
+section.img img
+{
+    width: 700px;
+}
+.underline
+{
+    text-decoration: underline;
+}
+
+.texte h1
+{
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: white;
+}
+span
+{
+    color: rgba(190, 0, 0, 0.8);
+}
+.texte p
+{
+    text-align: justify;
+    color: white;
+    font-size: 20px;
+}
+/* Footer */
+footer
+{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+i
+{
+    margin: 5px 20px;
+    cursor: pointer;
+}
+i:hover
+{
+    color: white;
+    transition: 0.5s;
+}
+a
+{
+    color: black;
+    text-decoration: none;
+}
+a:hover
+{
+    transition: 0.3s;
+    color: blue;
+}
+
+/* Page d'informations */
+section.main
+{
+ display: flex;
+ justify-content: center;
+}
+article.info
+{
+    width: 60%;
+    background-color: white;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+article.info p,h1
+{
+    color: black;
+}
+article.info p
+{
+    padding: 20px 20px;
+    font-size: 15px;
+    text-align: justify;
+}
+article.info h1
+{
+    font-size: 30px;
+    color: rgba(190, 0, 0, 0.8);
+}
+ul.information li
+{
+    box-shadow: none;
+    list-style: none;
+    margin: 15px 0px;
+}
+ul.information li:hover
+{
+    color: black;
+}
+ul.information strong
+{
+    font-size: 20px;
+    text-decoration: underline;
+}
+/* Page des Produits */
+
+
+div.corps
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+div.chaussure , div.pull, div.tshirt, div.masque
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    height: 550px;
+    margin: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px black;
+    cursor: pointer;
+}
+div.pull:hover,div.chaussure:hover,div.tshirt:hover,div.masque:hover
+{
+    box-shadow: 0px 0px 30px black;
+    transition: 0.3s
+}
+div.chaussure img, div.pull img, div.tshirt img, div.masque img
+{
+    width: 300px;
+    border-radius: 20px;
+}
+.chaussure p,.pull p,.tshirt p, .masque p
+{
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 20px;
+}
+div.descrip ul
+{
+    text-align: center;
+}
+div.descrip h1
+{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+div.descrip ul.carac
+{
+    list-style: none;
+    align-self: center;
+}
+ul.carac li:hover
+{
+    box-shadow: none;
+    color: black;
+}
+
+/* Galerie */
+
+h3
+{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom:30px ;
+}
+h3 strong
+{
+    color: rgba(190, 0, 0, 0.8);
+    font-size: 40px;
+}
+div.galerie
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+div.galerie img
+{
+    margin: 20px 0;
+    width: 1000px;
+}
+div.galerie1 
+{
+    display: flex;
+}
+div.galerie1 img
+{
+    width: 500px;
+}
+div.sweat
+{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+div.sweat img
+{
+    width: 400px;
+}
